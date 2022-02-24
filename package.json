@@ -1,0 +1,23 @@
+{
+  "name": "@artidata/hello-npm",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "First attempt in publishing a package to npm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artidata/hello-npm.git"
+  },
+  "keywords": [
+    "first"
+  ],
+  "author": "Imaduddin Haetami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artidata/hello-npm/issues"
+  },
+  "homepage": "https://github.com/artidata/hello-npm#readme"
+}
