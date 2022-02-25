@@ -1,12 +1,11 @@
 {
   "name": "@artidata/hello-npm",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "First attempt in publishing a package to npm.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "log": "node log.js"
+    "prepublish": "babel src -d lib",
+    "log": "node lib/log.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/artidata/hello-npm/issues"
   },
-  "homepage": "https://github.com/artidata/hello-npm#readme"
+  "homepage": "https://github.com/artidata/hello-npm#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
 }
